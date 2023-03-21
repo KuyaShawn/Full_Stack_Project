@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { ReadEmailComponent } from './read-email/read-email.component';
-import { SignupComponent } from './signup/signup.component';
-import { AboutComponent } from './about/about.component';
-import { AdminComponent } from './admin/admin.component';
-import { ContactComponent } from './contact/contact.component';
-
+import { AboutModule } from './about/about.module';
+import { AdminModule } from './admin/admin.module';
+import { LoginModule } from './login/login.module';
+import { ContactModule } from './contact/contact.module';
+import { HomeModule } from './home/home.module';
+import { LogoutModule } from './logout/logout.module';
+import { ReadEmailModule } from './read-email/read-email.module';
+import { SignupModule } from './signup/signup.module';
 
 
 @NgModule({
@@ -20,17 +20,19 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
-    LogoutComponent,
-    ReadEmailComponent,
-    SignupComponent,
-    AboutComponent,
-    AdminComponent,
-    ContactComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutModule,
+    AdminModule,
+    LoginModule,
+    ContactModule,
+    HomeModule,
+    LogoutModule,
+    ReadEmailModule,
+    SignupModule
   ],
   providers: [],
   bootstrap: [AppComponent]
