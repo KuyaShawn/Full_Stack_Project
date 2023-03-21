@@ -1,15 +1,78 @@
 <header class="mb-5">
-  <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button pt-3 pb-3">
-      <div class="container"><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-          <div><a class="navbar-brand" href="index.html"><span style="color: #CAD2C5;font-weight: bold;font-size: 2em;">Email Cache</span></a></div>
-          <div id="navcol-1" class="collapse navbar-collapse" style="color: rgb(255,255,255);">
-              <ul class="navbar-nav nav-right">
-                  <li class="nav-item"><a class="nav-link active ms-3 me-3" href="index.html" style="color: #CAD2C5;font-weight: bold;">Home</a></li>
-                  <li class="nav-item"><a class="nav-link ms-3 me-3" href="about.html" style="color: #CAD2C5;font-weight: bold;">About</a></li>
-                  <li class="nav-item"><a class="nav-link ms-3 me-3" href="contact.html" style="color: #CAD2C5;font-weight: bold;">Contact</a></li>
-              </ul>
-              <p class="ms-auto navbar-text actions"><a class="login ms-3 me-3" href="login.html" style="color: #CAD2C5;font-weight: bold;">Log In</a><a class="btn btn-light action-button ms-3 me-3" role="button" href="sign_up.html" style="color: #354F52;background: #CAD2C5;border-radius: 10px;border-style: solid;border-color: rgba(0,0,0,0.9);font-size: 16px;padding: 5px 8px;font-weight: bold;">Sign Up</a></p>
-          </div>
+  <nav
+    class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button pt-3 pb-3"
+  >
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navcol-1"
+      >
+        <span class="visually-hidden">Toggle navigation</span
+        ><span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+        <a class="navbar-brand" routerLink="/home"
+          ><span style="color: #cad2c5; font-weight: bold; font-size: 2em"
+            >Email Cache</span
+          ></a
+        >
       </div>
+      <div
+        id="navcol-1"
+        class="collapse navbar-collapse"
+        style="color: rgb(255, 255, 255)"
+      >
+        <ul class="navbar-nav nav-right">
+          <li class="nav-item">
+            <a
+              class="nav-link active ms-3 me-3"
+              routerLink="/home"
+              style="color: #cad2c5; font-weight: bold"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link ms-3 me-3"
+              routerLink="/about"
+              style="color: #cad2c5; font-weight: bold"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link ms-3 me-3"
+              routerLink="/contact"
+              style="color: #cad2c5; font-weight: bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p class="ms-auto navbar-text actions">
+          <a
+            class="login ms-3 me-3"
+            routerLink="/login"
+            style="color: #cad2c5; font-weight: bold"
+            >Log In</a
+          ><a
+            class="btn btn-light action-button ms-3 me-3"
+            role="button"
+            href="sign_up.html"
+            style="
+              color: #354f52;
+              background: #cad2c5;
+              border-radius: 10px;
+              border-style: solid;
+              border-color: rgba(0, 0, 0, 0.9);
+              font-size: 16px;
+              padding: 5px 8px;
+              font-weight: bold;
+            "
+            >Sign Up</a
+          >
+        </p>
+      </div>
+    </div>
   </nav>
 </header>
