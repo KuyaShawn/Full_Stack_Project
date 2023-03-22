@@ -29,11 +29,11 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #2F3E46;
+  background-color: #2f3e46;
 }
 
 #myFooter .fa {
-  font-size: 36px;
+  font-size: 2em;
   margin-right: 15px;
   margin-left: 20px;
   background-color: #cad2c5;
@@ -48,36 +48,36 @@
   transition: color 0.2s;
 }
 
-#myFooter .fa-facebook:hover {
+#myFooter .bi-facebook:hover {
   color: #2b55ff;
 }
 
-#myFooter .fa-facebook:focus {
+#myFooter .bi-facebook:focus {
   color: #2b55ff;
 }
 
-#myFooter .fa-google-plus:hover {
+#myFooter .bi-google:hover {
   color: red;
 }
 
-#myFooter .fa-google-plus:focus {
+#myFooter .bi-google:focus {
   color: red;
 }
 
-#myFooter .fa-twitter:hover {
+#myFooter .bi-twitter:hover {
   color: #00aced;
 }
 
-#myFooter .fa-twitter:focus {
+#myFooter .bi-twitter:focus {
   color: #00aced;
 }
 
-#myFooter .fa-linkedin:hover {
-  color: #007BB6;
+#myFooter .bi-linkedin:hover {
+  color: #007bb6;
 }
 
-#myFooter .fa-linkedin:focus {
-  color: #007BB6;
+#myFooter .bi-linkedin:focus {
+  color: #007bb6;
 }
 
 #myFooter {
