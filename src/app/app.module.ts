@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,12 +17,12 @@ import { ReadEmailModule } from './read-email/read-email.module';
 import { SignupModule } from './signup/signup.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import { SignupModule } from './signup/signup.module';
     HomeModule,
     LogoutModule,
     ReadEmailModule,
-    SignupModule
+    SignupModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
