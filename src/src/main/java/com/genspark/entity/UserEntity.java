@@ -11,14 +11,14 @@ public class UserEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private int id;
-
+  private String username;
+  private String title;
   private String fName;
   private String lName;
 
-  private String title;
 
-
-  private String username;
+@JsonIgnore
+  private String password;
 
   public int getId() {
     return id;
@@ -76,7 +76,7 @@ public class UserEntity {
     this.emails = emails;
   }
 
-  private String password;
+
 
   @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
   @JoinTable(name = "email")
