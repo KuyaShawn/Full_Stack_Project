@@ -44,9 +44,9 @@ export class SignupPageComponent implements OnInit {
 
     // if form is valid, route to admin page
     if (title === 'Admin') {
-      this.router.navigate(['/admin']);
+      this.router.navigate(['/admin/home']);
     } else if (title === 'User') {
-      this.router.navigate(['/user']);
+      this.router.navigate(['/end-user']);
     }
   }
 }

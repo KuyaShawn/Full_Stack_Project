@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,7 +14,8 @@ import { ContactModule } from './contact/contact.module';
 import { HomeModule } from './home/home.module';
 import { LogoutModule } from './logout/logout.module';
 import { SignupModule } from './signup/signup.module';
-import { UserModule } from './user/user.module';
+import { EndUserModule } from './end-user/end-user.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -37,8 +37,9 @@ import { UserModule } from './user/user.module';
     SignupModule,
     ReactiveFormsModule,
     FormsModule,
-    UserModule,
-    HttpClientModule
+    EndUserModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

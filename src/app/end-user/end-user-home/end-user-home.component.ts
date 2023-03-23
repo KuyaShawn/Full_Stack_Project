@@ -5,11 +5,11 @@ import { catchError, tap } from 'rxjs/operators';
 import { of } from 'rxjs';
 
 @Component({
-  selector: 'app-user-page',
-  templateUrl: './user-page.component.html',
-  styleUrls: ['./user-page.component.css'],
+  selector: 'app-end-user-home',
+  templateUrl: './end-user-home.component.html',
+  styleUrls: ['./end-user-home.component.css'],
 })
-export class UserPageComponent implements OnInit {
+export class EndUserHomeComponent implements OnInit {
   form!: FormGroup;
   resources!: any[];
 

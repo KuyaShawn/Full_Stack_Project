@@ -29,9 +29,9 @@ export class LoginPageComponent implements OnInit {
   
     // if form is valid and which ever the user chooses as the title
     if (title === 'admin') {
-      this.router.navigate(['/admin']);
+      this.router.navigate(['/admin/home']);
     } else if (title === 'user') {
-      this.router.navigate(['/user']);
+      this.router.navigate(['/end-user']);
     }
   }
 }

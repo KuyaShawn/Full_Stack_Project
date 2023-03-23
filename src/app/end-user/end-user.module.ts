@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { UserRoutingModule } from './user-routing.module';
-import { UserPageComponent } from './user-page/user-page.component';
+import { EndUserRoutingModule } from './end-user-routing.module';
+import { EndUserHomeComponent } from './end-user-home/end-user-home.component';
 
 
 @NgModule({
   declarations: [
-    UserPageComponent
+    EndUserHomeComponent
   ],
   imports: [
     CommonModule,
-    UserRoutingModule,
+    EndUserRoutingModule,
     ReactiveFormsModule
   ]
 })
-export class UserModule { }
+export class EndUserModule { }

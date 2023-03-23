@@ -6,6 +6,7 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { ReadEmailComponent } from './read-email/read-email.component';
 import { HomeComponent } from './home/home.component';
+import { ViewDetailComponent } from './view-detail/view-detail.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'read-email',
         component: ReadEmailComponent,
+      },
+      {
+        path: 'view-detail',
+        component: ViewDetailComponent,
       },
       {
         path: '',
