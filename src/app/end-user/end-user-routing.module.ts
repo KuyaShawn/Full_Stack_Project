@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ReadEmailPageComponent } from './read-email-page/read-email-page.component';
+import { EndUserHomeComponent } from './end-user-home/end-user-home.component';
 
 const routes: Routes = [
-  { path: 'read_email', component: ReadEmailPageComponent}
+  { path: 'end-user', component: EndUserHomeComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ReadEmailRoutingModule { }
+export class EndUserRoutingModule { }

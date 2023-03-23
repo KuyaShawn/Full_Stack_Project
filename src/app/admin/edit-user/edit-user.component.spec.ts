@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReadEmailPageComponent } from './read-email-page.component';
+import { EditUserComponent } from './edit-user.component';
 
-describe('ReadEmailPageComponent', () => {
-  let component: ReadEmailPageComponent;
-  let fixture: ComponentFixture<ReadEmailPageComponent>;
+describe('EditUserComponent', () => {
+  let component: EditUserComponent;
+  let fixture: ComponentFixture<EditUserComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReadEmailPageComponent ]
+      declarations: [ EditUserComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ReadEmailPageComponent);
+    fixture = TestBed.createComponent(EditUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
