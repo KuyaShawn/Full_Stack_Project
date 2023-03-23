@@ -7,7 +7,7 @@ import { User } from './user/user';
   providedIn: 'root',
 })
 export class UserService {
-  private baseURL = 'http://localhost:8080/api/v1/users';
+  private baseURL = 'http://localhost:8080/users';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -23,8 +23,8 @@ export class UserService {
     return this.httpClient.get<User>(`${this.baseURL}/${id}`);
   }
 
-  updateUser(id: number, user: User): Observable<Object> {
-    return this.httpClient.put(`${this.baseURL}/${id}`, user);
+  updateUser(user: User): Observable<Object> {
+    return this.httpClient.put(`${this.baseURL}/${user}`, user);
   }
 
   deleteUser(id: number): Observable<Object> {

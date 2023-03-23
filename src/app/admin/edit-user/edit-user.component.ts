@@ -36,7 +36,7 @@ export class EditUserComponent implements OnInit {
 
   onSubmit() {
     if (this.id !== undefined) {
-      this.userService.updateUser(this.id, this.user).subscribe(
+      this.userService.updateUser(this.user).subscribe(
         (data) => {
           this.goToUserList();
         },
