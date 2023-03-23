@@ -22,26 +22,26 @@ public class EmailController implements EmailFactory {
     return emailService.getEmails();
   }
 
-  @GetMapping("/mail/{id}")
+  @GetMapping("/email/{id}")
   @Override
   public EmailEntity getEmailById(int id) {
     return emailService.getEmailById(id);
   }
 
-  @PostMapping("/mail")
+  @PostMapping("/email")
   @Override
   public EmailEntity addEmail(EmailEntity email) {
     return emailService.addEmail(email);
   }
 
 
-  @PutMapping("/mail")
+  @PutMapping("/email")
   @Override
   public EmailEntity updateEmail(EmailEntity email) {
     return emailService.updateEmail(email);
   }
 
-  @DeleteMapping("/mail/{id}")
+  @DeleteMapping("/email/{id}")
   @Override
   public String deleteEmailById(@RequestBody int id) {
     return emailService.deleteEmailById(id);
