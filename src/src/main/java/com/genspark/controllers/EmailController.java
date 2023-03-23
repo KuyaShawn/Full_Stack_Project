@@ -16,32 +16,32 @@ public class EmailController implements EmailFactory {
   @Resource(name = "emailService")
   private EmailService emailService;
 
-  @GetMapping("/")
+  @GetMapping("/email")
   @Override
   public List<EmailEntity> getEmails() {
     return emailService.getEmails();
   }
 
-  @GetMapping("//")
+  @GetMapping("/mail/{id}")
   @Override
   public EmailEntity getEmailById(int id) {
     return emailService.getEmailById(id);
   }
 
-  @PutMapping("/")
+  @PostMapping("/mail")
   @Override
   public EmailEntity addEmail(EmailEntity email) {
     return emailService.addEmail(email);
   }
 
 
-  @PostMapping("/")
+  @PutMapping("/mail")
   @Override
   public EmailEntity updateEmail(EmailEntity email) {
     return emailService.updateEmail(email);
   }
 
-  @DeleteMapping("/")
+  @DeleteMapping("/mail/{id}")
   @Override
   public String deleteEmailById(@RequestBody int id) {
     return emailService.deleteEmailById(id);

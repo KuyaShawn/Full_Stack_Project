@@ -15,27 +15,27 @@ public class UserController implements UserFactory {
   @Resource(name = "userService")
   private UserService userService;
 
-  @GetMapping
+  @GetMapping("/users")
   @Override
   public List<UserEntity> getUsers() {
     return userService.getUsers();
   }
-  @GetMapping("//")
+  @GetMapping("/users/{id}")
   @Override
   public UserEntity getUserById(int id) {
     return userService.getUserById(id);
   }
-  @PutMapping("/")
+  @PostMapping("/users")
   @Override
   public UserEntity addUser(UserEntity user) {
     return userService.addUser(user);
   }
-  @PostMapping("/")
+  @PutMapping("/users/{user}")
   @Override
   public UserEntity updateUser(UserEntity user) {
     return userService.updateUser(user);
   }
-  @DeleteMapping("/")
+  @DeleteMapping("/users/{id}")
   @Override
   public String deleteUserById(int id) {
     return userService.deleteUserById(id);
