@@ -8,20 +8,35 @@
               <div class="sb-sidenav-menu-heading">
                 <span>Admin's Catalog</span>
               </div>
-              <a class="nav-link active" routerLink="/admin">
+              <a class="nav-link active" routerLink="/admin/dashboard">
                 <div class="sb-nav-link-icon">
                   <i class="fa fa-dashboard"></i>
                 </div>
-                <span>Dashboard</span> </a
-              ><a class="nav-link active" routerLink="/read_email">
-                <div class="sb-nav-link-icon"><i class="fa fa-group"></i></div>
-                <span>User Emails</span> </a
-              ><a class="nav-link active" routerLink="/admin">
+                <span>Dashboard</span>
+              </a>
+              <a class="nav-link active" routerLink="/admin/add-user">
                 <div class="sb-nav-link-icon">
                   <i class="fa fa-envelope-o"></i>
                 </div>
-                <span>Contact Messages</span> </a
-              ><a class="nav-link active" routerLink="/admin">
+                <span>Add User</span>
+              </a>
+              <a class="nav-link active" routerLink="/admin/edit-user">
+                <div class="sb-nav-link-icon">
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+                <span>Edit User</span>
+              </a>
+              <a class="nav-link active" routerLink="/admin/view-user">
+                <div class="sb-nav-link-icon">
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+                <span>View Users</span>
+              </a>
+              <a class="nav-link active" routerLink="/admin/read-email">
+                <div class="sb-nav-link-icon"><i class="fa fa-group"></i></div>
+                <span>User Emails</span>
+              </a>
+              <a class="nav-link active" routerLink="/admin">
                 <div class="sb-nav-link-icon">
                   <i class="fa fa-sign-out"></i>
                 </div>
@@ -38,7 +53,11 @@
       </div>
     </div>
     <div id="layoutSidenav_content">
-      <main></main>
+      <main>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </main>
     </div>
   </div>
 </div>
