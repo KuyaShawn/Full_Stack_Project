@@ -6,9 +6,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
-  styleUrls: ['./add-user.component.css']
+  styleUrls: ['./add-user.component.css'],
 })
-export class AddUserComponent  implements OnInit {
+export class AddUserComponent implements OnInit {
   user: User = new User();
 
   constructor(private userService: UserService, private router: Router) {}
