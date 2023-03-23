@@ -15,6 +15,7 @@ import { HomeModule } from './home/home.module';
 import { LogoutModule } from './logout/logout.module';
 import { ReadEmailModule } from './read-email/read-email.module';
 import { SignupModule } from './signup/signup.module';
+import { UserModule } from './user/user.module';
 
 
 
@@ -36,7 +37,8 @@ import { SignupModule } from './signup/signup.module';
     ReadEmailModule,
     SignupModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
