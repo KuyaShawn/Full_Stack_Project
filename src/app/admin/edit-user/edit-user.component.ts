@@ -11,41 +11,31 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class EditUserComponent implements OnInit {
   id?: number;
   user: User = new User();
-
-  constructor(
-    private userService: UserService,
+  constructor(private userService: UserService,
     private route: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router) { }
 
-  ngOnInit(): void {
-    const idParam = this.route.snapshot.params['id'];
-    if (typeof idParam === 'number') {
-      this.id = idParam;
-      this.userService.getUserById(this.id).subscribe(
-        (data) => {
+    ngOnInit(): void {
+      const idParam = this.route.snapshot.params['id'];
+      if (typeof idParam === 'number') {
+        this.id = idParam;
+    
+        this.userService.getUserById(this.id).subscribe(data => {
           this.user = data;
-        },
-        (error) => console.log(error)
-      );
-    } else {
-      // Log an error message to the console and stop the component initialization
-      console.error('Invalid or missing user ID');
+        }, error => console.log(error));
+      } else {
+        console.error('Invalid or missing user ID');
+      }
     }
+
+  onSubmit(){
+    this.userService.updateUser(this.user).subscribe( data =>{
+      this.goToUserList();
+    }
+    , error => console.log(error));
   }
 
-  onSubmit() {
-    if (this.id !== undefined) {
-      this.userService.updateUser(this.user).subscribe(
-        (data) => {
-          this.goToUserList();
-        },
-        (error) => console.log(error)
-      );
-    }
-  }
-
-  goToUserList() {
+  goToUserList(){
     this.router.navigate(['/users']);
   }
 }
