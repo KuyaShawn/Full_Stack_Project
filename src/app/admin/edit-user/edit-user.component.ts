@@ -9,23 +9,23 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./edit-user.component.css'],
 })
 export class EditUserComponent implements OnInit {
-  id?: number;
+  //id?: number;
   user: User = new User();
   constructor(private userService: UserService,
     private route: ActivatedRoute,
     private router: Router) { }
 
     ngOnInit(): void {
-      const idParam = this.route.snapshot.params['id'];
-      if (typeof idParam === 'number') {
-        this.id = idParam;
+      // const idParam = this.route.snapshot.params['id'];
+      // if (typeof idParam === 'number') {
+      //   this.user.id = idParam;
     
-        this.userService.getUserById(this.id).subscribe(data => {
-          this.user = data;
-        }, error => console.log(error));
-      } else {
-        console.error('Invalid or missing user ID');
-      }
+      //   this.userService.getUserById(this.user.id).subscribe(data => {
+      //     this.user = data;
+      //   }, error => console.log(error));
+      // } else {
+      //   console.error('Invalid or missing user ID');
+      // }
     }
 
   onSubmit(){

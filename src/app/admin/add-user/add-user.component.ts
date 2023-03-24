@@ -26,7 +26,7 @@ export class AddUserComponent implements OnInit {
   }
 
   goToUserList() {
-    this.router.navigate(['/users']);
+    this.router.navigate(['/usersList']);
   }
 
   onSubmit() {

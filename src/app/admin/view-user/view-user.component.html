@@ -16,16 +16,17 @@
   <tbody>
     <tr *ngFor="let user of users">
       <td>{{ user.id }}</td>
-      <td>{{ user.firstName }}</td>
-      <td>{{ user.lastName }}</td>
+      <td>{{ user.fName }}</td>
+      <td>{{ user.lName }}</td>
       <td>{{ user.title }}</td>
       <td>{{ user.username }}</td>
       <td>
-        <button (click)="updateUser(user.id)" class="btn btn-primary">
+        <button  (click)="updateUser(user.id)" (click)="refreshPage()" class="btn btn-primary">
           Update
         </button>
         <button
           (click)="deleteUser(user.id)"
+          (click)="refreshPage()"
           class="btn btn-danger"
           style="margin-left: 10px"
         >

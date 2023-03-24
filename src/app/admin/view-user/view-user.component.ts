@@ -43,4 +43,8 @@ export class ViewUserComponent implements OnInit {
       });
     }
   }
+
+  refreshPage(): void {
+    window.location.reload();
+  }
 }
