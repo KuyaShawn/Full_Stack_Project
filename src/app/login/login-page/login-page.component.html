@@ -32,10 +32,9 @@
                 <div class="mb-3">
                   <input
                     class="form-control"
-                    type="email"
-                    id="email"
-                    formControlName="email"
-                    placeholder="Email"
+                    type="text"
+                    formControlName="username"
+                    placeholder="Username"
                   />
                 </div>
 
@@ -43,25 +42,24 @@
                   <input
                     class="form-control"
                     type="password"
-                    id="password"
                     formControlName="password"
                     placeholder="Password"
                   />
                 </div>
                 <div class="mb-3">
-                  <label class="form-label" for="title">Choose Title</label>
-                  <select
-                    class="form-control"
-                    id="title"
-                    formControlName="title"
-                  >
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
+                  <label class="form-label" for="title">Role</label>
+                  <select class="form-control" id="role" formControlName="role">
+                    <option value="admin">admin</option>
+                    <option value="user">user</option>
                   </select>
                 </div>
 
                 <div class="mb-3">
-                  <button class="btn btn-primary d-block w-100" type="submit">
+                  <button
+                    class="btn btn-primary d-block w-100"
+                    type="submit"
+                    [disabled]="!loginForm.valid"
+                  >
                     Log In
                   </button>
                 </div>

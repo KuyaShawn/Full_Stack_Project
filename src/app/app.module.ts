@@ -18,7 +18,6 @@ import { EndUserModule } from './end-user/end-user.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
