@@ -11,6 +11,7 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) {}
 
+  // methods for admin page --START--
   getUsersList(): Observable<User[]> {
     return this.httpClient.get<User[]>(`${this.baseURL}`);
   }
@@ -30,4 +31,11 @@ export class UserService {
   deleteUser(id: number): Observable<Object> {
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
+  // --END--
+
+  // method for sign up page --START--
+  signup(user: User): Observable<User> {
+    return this.httpClient.post<User>(`${this.baseURL}/signup`, user);
+  }
+  // --END--
 }
